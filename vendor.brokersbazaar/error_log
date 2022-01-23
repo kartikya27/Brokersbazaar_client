@@ -1,0 +1,2 @@
+[02-Oct-2021 16:09:21 UTC] PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /home/qkihztilxlk9/public_html/projects.letsgolive.in/vendor.brokersbazaar/application/controllers/Vendor.php on line 44
+[11-Oct-2021 14:42:01 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/qkihztilxlk9/public_html/projects.letsgolive.in/vendor.brokersbazaar/application/controllers/Vendor.php on line 65

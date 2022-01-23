@@ -1,0 +1,1 @@
+[29-Dec-2021 09:00:53 UTC] PHP Fatal error:  Cannot redeclare Admin_control::editMenu() in /home/qkihztilxlk9/public_html/projects.letsgolive.in/admin.brokersbazaar/application/controllers/Admin_control.php on line 511
