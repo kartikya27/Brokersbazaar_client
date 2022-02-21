@@ -6,10 +6,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '184.168.119.128',
-	'username' => 'brokersbazaaruser',
-	'password' => 'brokersbazaarpassword',
-	'database' => 'brokersbazaar',
+	'hostname' => 'localhost',
+	'username' => 'u745874161_brokersbazaar',
+	'password' => 'Brokersbazaar@123',
+	'database' => 'u745874161_brokersbazaar',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
