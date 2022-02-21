@@ -6,7 +6,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '184.168.119.128',
 	'username' => 'brokersbazaaruser',
 	'password' => 'brokersbazaarpassword',
 	'database' => 'brokersbazaar',
