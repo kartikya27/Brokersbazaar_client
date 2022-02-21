@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 23, 2022 at 03:45 AM
+-- Generation Time: Feb 20, 2022 at 10:43 PM
 -- Server version: 5.7.36-cll-lve
 -- PHP Version: 7.3.32
 
@@ -422,15 +422,12 @@ CREATE TABLE `vendorDetails` (
 --
 
 INSERT INTO `vendorDetails` (`id`, `email`, `license`, `brokerage_commission`, `Equity_SEBI_Registration_No`, `gst`, `Exchange_Registration_Nos`, `NSE_TM_CODE`, `NSE_clr_no`, `BSE_Clearing_No`, `MSEI_TM_Code`, `Clearing_No`, `MCX_TM_No`, `mcx_Clearing_No`, `NCDEX_TM_No`, `ncdx_Clearing_No`, `ICEX_TM_ID`, `SEBI_Registration_for_DP`, `NSDL_DP_ID`, `CDSL_DP_ID`, `SEBI_Research_Analysts_No`, `SEBI_PMS_Registration_No`, `CMBPID_NCL_CM`) VALUES
-(7, 'parveenranga21@gmail.com', 'dsfa', 'dfs', 'sdf', 'mysst', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (9, 'kartikey.maandothiya@gmail.com', '123456', '12', '1234', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (10, 'mail2devicedisk@gmail.com', '11', '5', '22', '2345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123', NULL, NULL, NULL, NULL),
 (12, 'kartikya27@gmail.com', '123', '456', '789', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (13, 'pankajkumarsinha1@rediffmail.com', '123', '5', '12345', '567', '123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (14, 'kataria.vikesh@gmail.com', 'fadfadf45465456', '5%', 'ad45f4a]f4a5fd4a56', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(15, 'parveenranga21@gmail.com', 'fdf', 'gdfg', 'fghfg', NULL, NULL, NULL, NULL, 'dsfds', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (16, 'enigmamigo@gmail.com', '123', '12', '345', '2345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(17, 'parveenranga21@gmail.com', 'fdf', 'gdfg', 'fghfg', NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (18, 'parveenranga21@gmail.com', 'fdf', 'dfs', 'fghfg', NULL, 'sdfsd', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -531,7 +528,8 @@ ALTER TABLE `user_address`
 --
 ALTER TABLE `vendor`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `uniqueID` (`uniqueID`);
+  ADD UNIQUE KEY `uniqueID` (`uniqueID`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `vendorConnection`
@@ -543,7 +541,8 @@ ALTER TABLE `vendorConnection`
 -- Indexes for table `vendorDetails`
 --
 ALTER TABLE `vendorDetails`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `vendorHomePage`
@@ -565,19 +564,19 @@ ALTER TABLE `vendorServices`
 -- AUTO_INCREMENT for table `aboutUs`
 --
 ALTER TABLE `aboutUs`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` int(211) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(211) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `Package`
 --
 ALTER TABLE `Package`
-  MODIFY `id` int(222) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(222) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `pageContent`
@@ -595,7 +594,7 @@ ALTER TABLE `payment_logs`
 -- AUTO_INCREMENT for table `subMenu`
 --
 ALTER TABLE `subMenu`
-  MODIFY `id` int(211) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(211) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `testimonial`
