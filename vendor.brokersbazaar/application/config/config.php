@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$config['base_url'] = 'https://projects.letsgolive.in/vendor.brokersbazaar/';
+$config['base_url'] = 'https://portfolio.wrkva.xyz/brokersbazaar/vendor.brokersbazaar/';
 
 /*
 |--------------------------------------------------------------------------
